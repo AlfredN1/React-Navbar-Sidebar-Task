@@ -1,0 +1,119 @@
+.navbar {
+  width: 100%;
+  background-color: rgb(40, 40, 40);
+  border-bottom: 1px solid rgb(40, 40, 40);
+  ;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 60px;
+}
+
+
+.navbar-logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+
+.navbar-links {
+  display: flex;
+}
+
+
+.navbar-link {
+  color: whitesmoke;
+  text-decoration: none;
+  padding: 0 15px;
+}
+
+
+.navbar-link:hover {
+  color: lightgray;
+}
+
+.navbar-mobile-toggle {
+  display: none;
+}
+
+
+.hamburger-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: whitesmoke;
+}
+
+
+.sidebar-toggle-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+
+
+.mobile-menu {
+  display: none;
+  width: 100%;
+  background-color: rgb(40, 40, 40);
+  border-top: 1px solid rgb(40, 40, 40);
+}
+
+
+.mobile-menu-link {
+  display: block;
+  padding: 10px 20px;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.mobile-menu-link:hover {
+  color: lightgray
+}
+
+
+.mobile-sidebar-toggle {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: whitesmoke;
+}
+
+
+.chevron-icon {
+  margin-left: 5px;
+}
+
+
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+
+  }
+
+  .navbar-mobile-toggle {
+    display: block;
+
+  }
+
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: goldenrod;
+}
+
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+.content {
+  padding: 20px;
+  margin-top: 60px;
+  margin-left: 250px;
+  flex: 1;
+  transition: margin-left 0.3s ease;
+  color: whitesmoke;
+}
+
+
+.sidebar-hidden .content {
+  margin-left: 0;
+
+}
+
+
+@media (max-width: 768px) {
+  .content {
+    margin-left: 0;
+  }
+
+
+  .desktop-sidebar-toggle {
+    display: none;
+  }
+}
